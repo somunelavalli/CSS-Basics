@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pseudo Elements</title>
+    <style>
+      .child {
+        padding: 30% 30%;
+      }
+      .child1 {
+        margin: 20% 20%;
+      }
+      h1::before {
+        content: "Hello ";
+        background-color: aqua;
+      }
+      h1::after {
+        content: " Devs";
+        background-color: blueviolet;
+      }
+      h2::selection {
+        background-color: red;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="child">Web</h1>
+    <h2 class="child1">Hello Web Devs</h2>
+  </body>
+</html>

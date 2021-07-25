@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pseudo classes</title>
+    <style>
+      .click {
+        background: aqua;
+        color: black;
+        height: 30px;
+        margin: 20px;
+      }
+      .click:hover {
+        background-color: brown;
+        color: white;
+      }
+      .click:active {
+        background-color: yellowgreen;
+        color: white;
+        border: 3px solid red;
+      }
+      .click:focus {
+        outline: 3px dashed saddlebrown;
+        background-color: violet;
+        color: white;
+        outline-offset: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="click">Click to Save</button>
+  </body>
+</html>

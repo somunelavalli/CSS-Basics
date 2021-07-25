@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pseudo Elements-1</title>
+    <style>
+      .parent {
+        background-color: blueviolet;
+        width: 500px;
+        height: 500px;
+        /* position: relative; */
+      }
+      .child {
+        width: 150px;
+        height: 150px;
+        background-color: aliceblue;
+        display: inline-block;
+        margin: 5px;
+      }
+      .child:first-child {
+        background-color: green;
+      }
+      .child:last-child {
+        background-color: rosybrown;
+      }
+      .child:nth-child(3) {
+        background-color: cadetblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <span class="child">Hello Div</span>
+      <span class="child">Hello Div</span>
+      <span class="child">Hello Div</span>
+      <span class="child">Hello Div</span>
+      <span class="child">Hello Div</span>
+    </div>
+  </body>
+</html>
